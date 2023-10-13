@@ -1,0 +1,34 @@
+{
+	"name": "CSL Launcher",
+	"description": "Launcher designed for CS2",
+	"version": "1.0.0",
+	"private": true,
+	"main": "dist-electron/main/index.js",
+	"scripts": {
+		"dev": "cross-env NODE_ENV=development vite",
+		"build": "tsc && vite build && electron-builder --config electron-builder.json",
+		"prettify": "npx prettier --write ."
+	},
+	"devDependencies": {
+		"@types/node": "^20.5.0",
+		"@types/react": "^18.2.20",
+		"@types/react-dom": "^18.2.7",
+		"@vitejs/plugin-react": "^4.0.4",
+		"electron-builder": "^24.6.3",
+		"typescript": "^5.1.6",
+		"vite": "^4.4.9",
+		"vite-plugin-electron": "0.13.0-beta.1",
+		"vite-plugin-electron-renderer": "^0.14.5",
+		"vite-tsconfig-paths": "^4.2.0"
+	},
+	"dependencies": {
+		"chalk": "^5.3.0",
+		"cross-env": "^7.0.3",
+		"dotenv": "^16.3.1",
+		"electron": "^26.1.0",
+		"electron-log": "^4.4.8",
+		"prettier": "^3.0.2",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	}
+}

@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "composite": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "jsx": "react-jsx",
+        "baseUrl": "./",
+        "paths": {
+            "~electron/*": ["./src/electron/*"],
+            "~preload/*": ["./src/preload/*"],
+            "~renderer/*": ["./src/renderer/*"]
+        }
+    },
+    "include": [
+        "src/electron/**/*",
+        "src/preload/**/*",
+        "src/renderer/**/*",
+        "utils/**/*"
+    ]
+}
